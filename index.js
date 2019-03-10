@@ -93,5 +93,6 @@ app.get('*', function(req, res, next){
     }
 
 )
-
-module.exports = app
+var listener = res.listen(process.env.PORT || 3000, function () {
+  console.log('Your app is listening on port ' + listener.address().port);
+});
