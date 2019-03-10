@@ -93,6 +93,6 @@ app.get('*', function(req, res, next){
     }
 
 )
-var listener = res.listen(process.env.PORT || 3000, function () {
+var listener = res.listen(3000, function () {
   console.log('Your app is listening on port ' + listener.address().port);
 });
